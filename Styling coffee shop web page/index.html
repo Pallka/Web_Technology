@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <title>CSS</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Меню кав'ярні">
+        <link rel="icon" type="image/x-icon" href="images/x-icon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" 
+            rel="stylesheet"
+        >
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-img" src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                            <a href="#">Меню</a>
+                        </li>
+                        <li>
+                            <a href="#">Про нас</a>
+                        </li>
+                        <li>
+                            <a  class="btn" href="#">UA</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--meny button in mobile mode-->
+                <button class="hamburger-button">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+
+                <div class="mobile-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                            <a href="#">Меню</a>
+                        </li>
+                        <li>
+                            <a href="#">Про нас</a>
+                        </li>
+                        <li>
+                            <a  class="btn" href="#">UA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--about cafe-->
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h1 class="about-heading text-xxl">
+                        A prettiest coffee shop you have ever seen. You are wellcome!
+                    </h1>
+
+                    <div class="about-and-cafe-img">
+                        <div class="about-and-buttons">
+                            <p class="about-text">
+                                У <em>PRETTIEST</em> ми використовуємо виключно зерна арабіки, класу specialty 
+                                та працюємо за стандартами Specialty Coffee Association, щоб
+                                передати повний смаковий потенціал в напоях. <br><br>
+                                Меню напоїв - найрізноманітніше. Від кавової класики до сучасної міксології. 
+                                Окрім якісної кави, тут повноцінне меню - сніданки цілий день, 
+                                бургери, супи, десерти.
+                            </p>
+                            <div class="about-buttons">
+                                <a href="#" class="btn btn-primary">Відвідати кафе</a>
+                                <a href="#" class="btn">Забронювати столик</a>
+                            </div>
+                        </div>
+                        
+                        <img src="./images/cafe.jpg" alt="cafe photo" class="cafe-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Menu-->
+        <section class="cafe-main-menu bg-black">
+            <div class="container-sm">
+                <h2 class="menu-heading text-xl text-container">
+                    <strong>Меню</strong>
+                </h2>
+        
+                <div class="cafe-menu">
+                    <div class="menu">
+                        <input type="radio" name="menu" id="napoi" checked>
+                        <label for="napoi">Напої</label>
+        
+                        <input type="radio" name="menu" id="snidanky">
+                        <label for="snidanky">Сніданки</label>
+        
+                        <input type="radio" name="menu" id="stravy">
+                        <label for="stravy">Страви</label>
+        
+                        <input type="radio" name="menu" id="deserty">
+                        <label for="deserty">Десерти</label>
+        
+                        <input type="radio" name="menu" id="vypichka">
+                        <label for="vypichka">Випічка</label>
+                        <!--Напої-->
+                        <div class="menu-content" id="content-napoi">
+                            <div class="card-grid text-md">
+                                <div class="card">
+                                    <p>Лате</p>
+                                    <p>80 грн</p>
+                                    <div><img src="images/late.jpeg" alt=""></div>
+                                </div>
+
+                                <div class="card">
+                                    <p>Ice лате</p>
+                                    <p>88 грн</p>
+                                    <div><img src="images/icelate.webp" alt=""></div>
+                                </div>
+
+                                <div class="card">
+                                    <p>Какао-малина</p>
+                                    <p>90 грн</p>
+                                    <div><img src="images/cocoa.webp" alt=""></div>
+                                </div>
+
+                                <div class="card">
+                                    <p>Ice матча</p>
+                                    <p>120 грн</p>
+                                    <div><img src="images/matcha.webp" alt=""></div>
+                                </div>
+
+                                <div class="card">
+                                    <p>Лимонад полуниця</p>
+                                    <p>120 грн</p>
+                                    <div><img src="images/lemon.webp" alt=""></div>
+                                </div>
+
+                                <div class="card">
+                                    <p>Холодний чай</p>
+                                    <p>95 грн</p>
+                                    <div><img src="images/coldtea.webp" alt=""></div>
+                                </div>
+                            </div>                      
+                        </div>
+
+                        <!--сніданки-->
+                        <div class="menu-content" id="content-snidanky">
+                            <div class="card-grid text-md">
+                                <div class="card">
+                                    <p>Солені сирники</p>
+                                    <p>370 грн</p>
+                                    <div><img src="images/sn-1.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Тост</p>
+                                    <p>325 грн</p>
+                                    <div><img src="images/sn-2.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Скрембл</p>
+                                    <p>275 грн</p>
+                                    <div><img src="images/sn-3.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Солодкі сирники</p>
+                                    <p>185 грн</p>
+                                    <div><img src="images/sn4.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Панкейки</p>
+                                    <p>270 грн</p>
+                                    <div><img src="images/sn-5.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Скрембл</p>
+                                    <p>200 грн</p>
+                                    <div><img src="images/sn-6.webp" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Страви-->
+                        <div class="menu-content" id="content-stravy">
+                            <div class="card-grid text-md">
+                                <div class="card">
+                                    <p>Салат Цезарп</p>
+                                    <p>270 грн</p>
+                                    <div><img src="images/st-1.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Уха</p>
+                                    <p>230 грн</p>
+                                    <div><img src="images/st-2.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Бограч</p>
+                                    <p>265 грн</p>
+                                    <div><img src="images/st-3.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Вареники</p>
+                                    <p>180 грн</p>
+                                    <div><img src="images/st-4.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Борщ</p>
+                                    <p>280 грн</p>
+                                    <div><img src="images/st-5.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Деруни</p>
+                                    <p>340 грн</p>
+                                    <div><img src="images/st-6.webp" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--десерти-->
+                        <div class="menu-content" id="content-deserty">
+                            <div class="card-grid text-md">
+                                <div class="card">
+                                    <p>Спартак</p>
+                                    <p>111 грн</p>
+                                    <div><img src="images/d-6.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Печиво-чизкейк</p>
+                                    <p>80 грн</p>
+                                    <div><img src="images/d-1.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Брауні</p>
+                                    <p>72 грн</p>
+                                    <div><img src="images/d-2.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Моті</p>
+                                    <p>105 грн</p>
+                                    <div><img src="images/d-3.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Макаронс</p>
+                                    <p>90 грн</p>
+                                    <div><img src="images/d-4.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Брауні з вишнею</p>
+                                    <p>76 грн</p>
+                                    <div><img src="images/d-5.webp" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Випічка-->
+                        <div class="menu-content" id="content-vypichka">
+                            <div class="card-grid text-md">
+                                <div class="card">
+                                    <p>Міні-сирник</p>
+                                    <p>80 грн</p>
+                                    <div><img src="images/cheesecake.jpeg" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Класичний сирник</p>
+                                    <p>120 грн</p>
+                                    <div><img src="images/classiccheese.jpeg" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Сінабон</p>
+                                    <p>95 грн</p>
+                                    <div><img src="images/sinab.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Тірамісу з морозивом</p>
+                                    <p>120 грн</p>
+                                    <div><img src="images/tiramisu.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Вафельна трубочка</p>
+                                    <p>110 грн</p>
+                                    <div><img src="images/waf.webp" alt=""></div>
+                                </div>
+                                <div class="card">
+                                    <p>Горішки</p>
+                                    <p>80 грн</p>
+                                    <div><img src="images/nut.webp" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="info container bg-light">
+            <div class="location text-container text-sm">
+                <div>
+                    <img src="images/pin.png" alt="">
+                </div>
+                <div>
+                    <h2>Адреса</h2>
+                    <p>вулиця Генерала Тарнавського, Львів, Львівська область</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="user-input container bg-light">
+            <div class="reservation-card">
+                <h2>Резерв столу</h2>
+
+                <form>
+                    <label for="name">Ім'я</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="number">Номер телефону</label><br>
+                    <input type="tel" id="number"><br>
+                    <label for="date">Дата</label><br>
+                    <input type="date" id="time" placeholder="Дата"><br>
+                    <label for="time">Година</label><br>
+                    <input type="time" id="time" placeholder="Час"><br>
+                    <label for="guests">Кількість гостей</label><br>
+                    <input type="number" id="guests"></input>
+                </form>
+                <input type="submit" class="btn btn-primary" value="Резерв">
+
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="footer bg-black">
+            <div class="container">
+                <div class="footer-grid">
+                    <div >
+                        <h4>Prettiest cafe</h4>
+                        <ul>
+                            <li><a href="">Головна</a></li>
+                            <li><a href="">Меню</a></li>
+                            <li><a href="">Про нас</a></li>
+                            <li><a href="">Резерв</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Контакти</h4>
+                        <ul>
+                            <li><a href="">
+                                <img src="images/phone.png" alt="">
+                                Phone
+                            </a></li>
+                            <li><a href="">
+                                <img src="images/insta.png" alt="">
+                                Instagram
+                            </a></li>
+                            <li><a href="">
+                                <img src="images/facebook.png" alt="">
+                                Facebook
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h5>&copy; 2024 Kateryna Palka</h5>
+            </div>
+        </footer>
+    </body>
+</html>

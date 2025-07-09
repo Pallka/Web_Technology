@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700; /
+                1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/x-icon.ico">
+</head>
+<body>
+    <div><p id="time"></p></div>
+    <h1>Реєстрація учасників на захід</h1>
+    <h2>Реєстрація адміністратора</h2>
+    <form action="" onsubmit="saveAdminData(event)">
+        <label for="adminName">Ім'я адміністратора:</label><br>
+        <input type="text" id="adminName" name="adminName" placeholder="Введіть ім'я адміністратора"><br>
+        <input type="submit" value="Зберегти">
+    </form>
+
+    <h2>Реєстрація учасників</h2>
+    <form id="registrationForm" onsubmit="saveUserData(event)">
+        <label for="firstName">Ім'я:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Введіть ім'я" required><br>
+        <p id="firstNameError" class="error"></p>
+
+        <label for="secondName">Прізвище:</label><br>
+        <input type="text" id="secondName" name="secondName" placeholder="Введіть прізвище" required><br>
+        <p id="secondNameError" class="error"></p>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Введіть email"><br>
+        <p id="emailError" class="error"></p>
+
+        <label for="phone">Телефон:</label><br>
+        <input type="number" id="phone" name="phone" placeholder="Введіть номер телефону"><br>
+        <p id="phoneError" class="error"></p>
+
+        <input type="submit" value="Реєстрація">
+    </form>
+
+    <div id="usersList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    background-color: #000957;
+}
+h1 {
+    color: #C4D9FF;
+}
+h2 {
+    color: #747c84;
+}
+.item {
+    padding: 4px;
+    margin: 8px;
+    background-color: #D9EAFD;
+    border-radius: 4px;
+}

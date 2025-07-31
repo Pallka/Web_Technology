@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Погода</h1>
+    <form action="#">
+        <input type="text" placeholder="Введіть назву населеного пункту, країни або регіону" id="cityUserInput">
+        <button type="submit" id="searchBtn"><b>Пошук</b></button>
+    </form>
+    <section>
+        <div class="div-main-weater-info">
+            <img src="./images/1.svg" alt="">
+            <p class="temp">+24°</p>
+            <p>Сонячно</p>
+            <p>Вівторок, 23/06</p>
+        </div>    
+        </div>
+    </section>
+
+    <section class="not-found">
+        <h2>City not found :/ </h2>
+    </section>
+</body>
+</html>

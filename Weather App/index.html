@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weater</title>
+    <link rel="icon" href="./images/x-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +17,23 @@
         <input type="text" placeholder="Введіть назву населеного пункту, країни або регіону" id="cityUserInput">
         <button type="submit" id="searchBtn"><b>Пошук</b></button>
     </form>
-    <section>
+    <section class="weather-info">
         <div class="div-main-weater-info">
-            <img src="./images/1.svg" alt="">
-            <p class="temp">+24°</p>
-            <p>Сонячно</p>
-            <p>Вівторок, 23/06</p>
+            <img src="./images/1.svg" alt="" class="weather-img">
+            <p class="temp-txt">+24°</p>
+            <h3 class="city-txt"></h3>
+            <p class="condition-txt">Сонячно</p>
+            <p class="">Humidity: </p>
+            <p class="humidity-txt"></p>
+            <p class="">Wind: </p>
+            <p class="wind-txt"></p>
+            <p class="current-date-txt">Вівторок, 23/06</p>
         </div>    
         </div>
+    </section>
+
+    <section class="search-city">
+        <h2><b>search city</b> Find out the weather conditions of the city</h2>
     </section>
 
     <section class="not-found">

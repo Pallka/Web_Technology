@@ -51,7 +51,7 @@ section {
 
 .div-main-weater-info {
     background-color: #5ab8f3;
-    height: 180px;
+    height: auto;
     width: 350px;
     padding: 1rem;
     margin: 1.2rem;

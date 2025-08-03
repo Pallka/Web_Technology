@@ -40,18 +40,32 @@ async function getFetchData(endPoint, city) {
 }
 
 function getWeatherIcon(id){
-    if (id < 232) return '4.svg'
-    if (id < 321) return '3.svg'
-    if (id < 531) return '5.svg'
-    if (id < 622) return '.svg'
-    if (id < 781) return '.svg'
-    if (id < 800) return '.svg'
-    else return '2.svg'
+    if (id < 232) return 'TtStorm.svg'
+    if (id < 321) return 'RainCloudy.svg'
+    if (id == 511) return 'Sleet.svg'
+    if (id < 531) return 'Rain.svg'
+    if (id < 622) return 'Snow.svg'
+    if (id < 781) return 'wind.svg'
+    if (id < 800) return 'sunny.svg'
+    if (id < 801) return 'pcloudy.svg'
+    if (id < 802) return 'mcloudy.svg'
+    else return 'clouds.svg'
 }
 
 function getCurrentDate(){
     const currentDate = new Date()
-    console.log(currentDate)
+    // const hours = currentDate.getHours();
+    // console.log(hours)
+    const options = {
+        weekday: 'short',
+        day: '2-digit',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+    }
+
+    return currentDate.toLocaleDateString('en-GB', options)
 }
 
 async function updateWeaterInfo(city) {
@@ -73,10 +87,11 @@ async function updateWeaterInfo(city) {
 
     cityTxt.textContent = country
     tempTxt.textContent = Math.round(temp) + '°C'
+    conditionTxt.textContent = main
     humidityTxt.textContent = humidity + '%'
     windTxt.textContent = speed + ' M/s'
     currentDateTxt.textContent = getCurrentDate()
-    weatherImg.src = `./images/${getWeatherIcon(id)}`
+    weatherImg.src = `./images/weather_icons/${getWeatherIcon(id)}`
 
     showDisplaySection(weatherInfoSection)
 }
@@ -84,6 +99,6 @@ async function updateWeaterInfo(city) {
 function showDisplaySection(section) {
     [notFoundCitySection, searchCitySection, weatherInfoSection]
         .forEach(section => section.style.display = 'none')
-
+    console.log('Showing section', section)
     section.style.display = 'flex'
 }

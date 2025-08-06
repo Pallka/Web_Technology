@@ -1,3 +1,4 @@
+require('dotenv').config();
 const cityUserInput = document.querySelector("#cityUserInput")
 const searchBtn = document.querySelector("#searchBtn")
 
@@ -14,6 +15,7 @@ const weatherImg = document.querySelector('.weather-img')
 const currentDateTxt = document.querySelector('.current-date-txt')
 const forecastItemsContainer = document.querySelector('.div-forecast-items')
 
+const apiKey = env.OPENWEATHER_API_KEY;
 
 document.getElementById('theme-toggle').addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
